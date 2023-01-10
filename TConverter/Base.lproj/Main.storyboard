@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-tF-9g7">
+                                <rect key="frame" x="-27" y="0.0" width="433" height="875"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="AeS-Ft-Qh3">
+                                <rect key="frame" x="75.666666666666686" y="109" width="242" height="45"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yy0-yf-Me8">
+                                <rect key="frame" x="51" y="411" width="291" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="linkColor"/>
+                                <color key="maximumTrackTintColor" systemColor="systemPinkColor"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SRD-Jj-CcP"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kFB-mX-hIL">
+                                <rect key="frame" x="168" y="344" width="57" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-5S-gBd">
+                                <rect key="frame" x="160.66666666666666" y="466" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ac4-tF-9g7" secondAttribute="top" constant="59" id="3Nm-St-Z4F"/>
+                            <constraint firstItem="yy0-yf-Me8" firstAttribute="top" secondItem="kFB-mX-hIL" secondAttribute="bottom" constant="25" id="4Cy-tX-vWR"/>
+                            <constraint firstItem="AeS-Ft-Qh3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="760-EC-OrI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="Ac4-tF-9g7" secondAttribute="leading" constant="27" id="8yI-MN-fCL"/>
+                            <constraint firstItem="Ac4-tF-9g7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="13" id="976-y4-1OD"/>
+                            <constraint firstItem="yy0-yf-Me8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C1X-ZY-2Ee"/>
+                            <constraint firstItem="uz3-5S-gBd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OtI-FO-fUE"/>
+                            <constraint firstItem="yy0-yf-Me8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pf1-NN-rdS"/>
+                            <constraint firstItem="AeS-Ft-Qh3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YKf-pc-Frd"/>
+                            <constraint firstItem="kFB-mX-hIL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f3N-Rl-Zoq"/>
+                            <constraint firstItem="Ac4-tF-9g7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="57" id="kIt-Gb-3vC"/>
+                            <constraint firstItem="yy0-yf-Me8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="kMC-io-UvA"/>
+                            <constraint firstItem="uz3-5S-gBd" firstAttribute="top" secondItem="yy0-yf-Me8" secondAttribute="bottom" constant="25" id="sWt-5S-ZdS"/>
+                        </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="976-y4-1OD"/>
+                                <include reference="kIt-Gb-3vC"/>
+                                <include reference="3Nm-St-Z4F"/>
+                                <include reference="8yI-MN-fCL"/>
+                                <include reference="760-EC-OrI"/>
+                                <include reference="YKf-pc-Frd"/>
+                                <include reference="f3N-Rl-Zoq"/>
+                                <include reference="4Cy-tX-vWR"/>
+                                <include reference="C1X-ZY-2Ee"/>
+                                <include reference="Pf1-NN-rdS"/>
+                                <include reference="OtI-FO-fUE"/>
+                                <include reference="sWt-5S-ZdS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="celisusLabel" destination="kFB-mX-hIL" id="3WZ-8x-yfz"/>
+                        <outlet property="fahrenheitLabel" destination="uz3-5S-gBd" id="jLb-wq-Ebq"/>
+                        <outlet property="slider" destination="yy0-yf-Me8" id="Ug9-Rp-LNx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.323943661971839" y="2.2900763358778624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun" width="375" height="667"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
